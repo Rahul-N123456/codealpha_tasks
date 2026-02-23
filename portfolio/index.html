@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahul N | Portfolio</title>
+
+<style>
+body{
+ margin:0;
+ font-family:'Segoe UI',sans-serif;
+ background:#f8fafc;
+ color:#0f172a;
+ animation:pageLoad .8s ease;
+}
+
+/* HERO */
+.hero{
+ background:linear-gradient(120deg,#2563eb,#1e40af);
+ color:white;
+ text-align:center;
+ padding:70px 20px;
+}
+
+/* Sections */
+section{
+ padding:35px 10%;
+ opacity:0;
+ transform:translateY(30px);
+ animation:sectionIn .8s ease forwards;
+}
+section:nth-of-type(1){animation-delay:.2s}
+section:nth-of-type(2){animation-delay:.4s}
+section:nth-of-type(3){animation-delay:.6s}
+section:nth-of-type(4){animation-delay:.8s}
+section:nth-of-type(5){animation-delay:1s}
+section:nth-of-type(6){animation-delay:1.2s}
+section:nth-of-type(7){animation-delay:1.4s}
+
+/* Grid */
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+ gap:20px;
+}
+
+/* Cards */
+.card,.skill-box{
+ background:white;
+ padding:20px;
+ border-radius:12px;
+ box-shadow:0 10px 20px rgba(0,0,0,.08);
+ transition:.3s;
+}
+.card:hover,.skill-box:hover{
+ transform:translateY(-6px) scale(1.03);
+ box-shadow:0 16px 30px rgba(0,0,0,.12);
+}
+
+/* Skills */
+.skill{
+ background:#2563eb;
+ color:white;
+ padding:7px 14px;
+ border-radius:20px;
+ margin:5px;
+ display:inline-block;
+ font-size:13px;
+ animation:pulse 2.5s infinite;
+}
+
+/* Animations */
+@keyframes pageLoad{from{opacity:0}to{opacity:1}}
+@keyframes sectionIn{to{opacity:1;transform:translateY(0)}}
+@keyframes pulse{
+0%{box-shadow:0 0 0 0 rgba(37,99,235,.6)}
+70%{box-shadow:0 0 0 12px rgba(37,99,235,0)}
+100%{box-shadow:0 0 0 0 rgba(37,99,235,0)}
+}
+
+a{color:white;text-decoration:none}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<h1>Rahul N</h1>
+<p>Data Science | Machine Learning | Web Development</p>
+<p>📧 <a href="mailto:rahuln1442004@gmail.com">rahuln1442004@gmail.com</a> | Tumkur</p>
+</div>
+
+<section>
+<h2>About Me</h2>
+<p>BE student at Nitte Meenakshi Institute of Technology with strong interest in Data Science, Machine Learning, and Web Development. Passionate about building intelligent and user-friendly applications.</p>
+</section>
+
+<section>
+<h2>Education</h2>
+<div class="card">
+<b>BE – Nitte Meenakshi Institute of Technology</b><br>
+Year of Passing: 2027 | CGPA: 8.57
+</div>
+</section>
+
+<section>
+<h2>Technical Skills</h2>
+<div class="grid">
+<div class="skill-box">
+<b>Programming</b><br><br>
+<span class="skill">Python</span><span class="skill">Java</span><span class="skill">DSA</span>
+</div>
+<div class="skill-box">
+<b>Web</b><br><br>
+<span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">Responsive</span>
+</div>
+<div class="skill-box">
+<b>Data & ML</b><br><br>
+<span class="skill">SQL</span><span class="skill">Pandas</span><span class="skill">ML Basics</span>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Projects</h2>
+<div class="grid">
+<div class="card">
+<h3>Pneumonia Detection</h3>
+<p>ML model to detect pneumonia from lung X-ray images. Front-end using HTML & CSS.</p>
+</div>
+<div class="card">
+<h3>Movie Recommendation System</h3>
+<p>Recommendation system using Data Mining and Big Data Analytics.</p>
+</div>
+<div class="card">
+<h3>Smart Blood Donation and Request System</h3>
+<p>A web application for connecting blood donors with recipients. Used MongoDB for database management and integrated maps for location-based services. Technologies: HTML, CSS, JavaScript, MongoDB, Maps API.</p>
+</div>
+<div class="card">
+<h3>Smart Waste Management System</h3>
+<p>Final year project - An intelligent waste management system for efficient garbage collection and monitoring. Uses IoT sensors and real-time data analytics for optimized waste collection routes.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Certificates</h2>
+<div class="grid">
+<div class="card">SQL Basics</div>
+<div class="card">SQL Joins & Relationships</div>
+<div class="card">Python for Data Science</div>
+<div class="card">Pandas Data Exploration</div>
+<div class="card">HTML Fundamentals</div>
+<div class="card">CSS Styling</div>
+<div class="card">Responsive Web Design</div>
+<div class="card">Java Basics for DSA</div>
+<div class="card">Getting Started with Java</div>
+</div>
+</section>
+
+<section>
+<h2>Strengths</h2>
+<div class="grid">
+<div class="card">Quick Learner</div>
+<div class="card">Hard Working</div>
+<div class="card">Team Player</div>
+<div class="card">Self-Motivated</div>
+</div>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>Email: <a href="mailto:rahuln1442004@gmail.com" style="color:#2563eb">rahuln1442004@gmail.com</a></p>
+<p>Location: Tumkur</p>
+</section>
+
+</body>
+</html>
